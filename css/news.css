@@ -79,6 +79,7 @@ body {
 .slider .slider_right img {
   width: 653px;
   height: 653px;
+  object-fit: cover;
 }
 .slider_right .control {
   position: absolute;
@@ -243,4 +244,19 @@ body {
   line-height: 32px;
   letter-spacing: 0em;
   text-align: left;
+}
+.sliders {
+  overflow: hidden;
+  animation-name: fade;
+  animation-duration: 1s;
+  display: none;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }
