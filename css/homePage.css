@@ -210,6 +210,8 @@ main {
   letter-spacing: 0em;
   text-align: center;
   padding-bottom: 85px;
+  width: 850px;
+  margin: 0 auto;
 }
 
 .supportAndShare_device {
