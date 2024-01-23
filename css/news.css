@@ -118,6 +118,7 @@ body {
   cursor: pointer;
   transition: box-shadow 0.3s ease-in-out;
 }
+
 .hot_news .load_more button:hover {
   box-shadow: 0px 10px 20px rgba(177, 157, 154, 0.8);
 }
