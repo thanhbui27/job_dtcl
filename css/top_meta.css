@@ -203,7 +203,11 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 50px;
+  position: relative;
+}
+.slider_rate_content {
+  overflow: hidden;
+  margin: 125px 0;
 }
 .slider_rate_card {
   cursor: pointer;
@@ -212,7 +216,6 @@ body {
   width: 400px;
   height: 230px;
   border-radius: 10px;
-  margin-top: 125px;
 }
 .slider_rate_card-header,
 .slider_rate_card-header .rate {
@@ -254,25 +257,75 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-.slider_rate_control .dot,
 .slider_rate_control .control {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 15px;
 }
-.slider_rate_control .dot div {
-  width: 15px;
-  height: 15px;
-  background-color: #fff;
-  border-radius: 50%;
-  cursor: pointer;
-}
-.slider_rate_control .dot div.active {
+
+.slick-dots ul li.slick-active {
   width: 45px;
   background: #ff0000;
   border-radius: 50px;
 }
+
 .slider_rate_control .control img {
   cursor: pointer;
+}
+.slick-prev {
+  display: none;
+}
+
+.slick-prev {
+  /*my style*/
+  display: none;
+}
+
+.btn-left,
+.btn-right {
+  position: absolute;
+  bottom: 0;
+  right: 10px;
+}
+.btn-right {
+  right: 90px;
+}
+
+.slick-dots {
+  display: flex;
+  justify-content: flex-start;
+  margin: 0;
+  padding: 1rem 0;
+
+  list-style-type: none;
+}
+.slick-dots li {
+  margin: 0 0.25rem;
+}
+
+.slick-dots button {
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  padding: 0;
+  border: none;
+  border-radius: 100%;
+  background-color: rgb(255, 255, 255);
+  text-indent: -9999px;
+  transition: all 1s ease-in-out;
+}
+
+.slick-dots li.slick-active button {
+  width: 3rem;
+  border-radius: 50px;
+  background-color: red;
+}
+
+.slick-slide {
+  margin: 60px 25px;
+}
+
+.slick-list {
+  margin: 0 -20px;
 }
