@@ -1,4 +1,5 @@
 var slides = document.querySelectorAll(".sliders");
+
 var index = 0;
 
 function changeSlide() {

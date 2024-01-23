@@ -76,30 +76,20 @@ body {
 .slider_right {
   position: relative;
 }
-.slider .slider_right img {
+.slider .slider_right .img-slide {
   width: 653px;
   height: 653px;
   object-fit: cover;
 }
-.slider_right .control {
+.slider_right .border {
   position: absolute;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
-  background: #333333;
-  bottom: 0;
-  width: 179px;
-  height: 70px;
+  width: 100%;
+  height: 100%;
+  top: -20px;
+  left: 0;
+  z-index: 99;
 }
-.slider_right .control img {
-  width: 12px;
-  height: 12px;
-  object-fit: contain;
-}
-.slider_right .control img.left {
-  rotate: 180deg;
-}
+
 .hot_news {
   margin-top: 144px;
   margin-bottom: 43px;
